@@ -1,0 +1,9 @@
+cd 22/
+mkdir {dz,dz_file,dz_qa}
+cd dz
+touch {1_file,2_file,3_file}.txt | touch {4_file,5_file}.json
+mkdir {qa_1,qa_2,qa_3}
+ls -la
+cd ..
+cd dz
+mv {1_file,2_file}.txt qa_1
