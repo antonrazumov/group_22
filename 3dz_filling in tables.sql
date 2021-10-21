@@ -1,0 +1,109 @@
+--заполнение salary
+--insert into salary (id, monthly_salary) values (default,100);
+--insert into salary (id, monthly_salary) values (default,200);
+--insert into salary (id, monthly_salary) values (default,300);
+--insert into salary (id, monthly_salary) values (default,400);
+--insert into salary (id, monthly_salary) values (default,500);
+--insert into salary (id, monthly_salary) values (default,600);
+--insert into salary (id, monthly_salary) values (default,700);
+--insert into salary (id, monthly_salary) values (default,800);
+--insert into salary (id, monthly_salary) values (default,900);
+--insert into salary (id, monthly_salary) values (default,1000);
+
+--заполнение roles
+--insert into roles (id, role_title) values (default, 'Сleaner');
+--insert into roles (id, role_title) values (default, 'Security guard');
+--insert into roles (id, role_title) values (default, 'Tow truck');
+--insert into roles (id, role_title) values (default, 'Welder');
+--insert into roles (id, role_title) values (default, 'Administrator');
+--insert into roles (id, role_title) values (default, 'Electrician');
+--insert into roles (id, role_title) values (default, 'Mechanic');
+--insert into roles (id, role_title) values (default, 'Bookkeeper');
+--insert into roles (id, role_title) values (default, 'Manager');
+--insert into roles (id, role_title) values (default, 'Owner');
+
+--заполнение roles_salar
+--insert into roles_salary (id,id_role,id_salary) values (default, 1, 1);
+--insert into roles_salary (id,id_role,id_salary) values (default, 2, 2);
+--insert into roles_salary (id,id_role,id_salary) values (default, 3, 3);
+--insert into roles_salary (id,id_role,id_salary) values (default, 4, 4);
+--insert into roles_salary (id,id_role,id_salary) values (default, 5, 5);
+--insert into roles_salary (id,id_role,id_salary) values (default, 6, 6);
+--insert into roles_salary (id,id_role,id_salary) values (default, 7, 7);
+--insert into roles_salary (id,id_role,id_salary) values (default, 8, 8);
+--insert into roles_salary (id,id_role,id_salary) values (default, 9, 9);
+--insert into roles_salary (id,id_role,id_salary) values (default, 10, 10);
+
+--заполнение employees
+--insert into employees (id, employee_name) values (default, 'Sveta');
+--insert into employees (id, employee_name) values (default, 'David');
+--insert into employees (id, employee_name) values (default, 'Stas');
+--insert into employees (id, employee_name) values (default, 'Vadim');
+--insert into employees (id, employee_name) values (default, 'Alexandra');
+--insert into employees (id, employee_name) values (default, 'Misha');
+--insert into employees (id, employee_name) values (default, 'Ivan');
+--insert into employees (id, employee_name) values (default, 'Natalia');
+--insert into employees (id, employee_name) values (default, 'Katharine');
+--insert into employees (id, employee_name) values (default, 'Anton');
+
+--заполнение employees_roles
+--insert into employees_roles (id,id_role,id_employee) values (default, 1, 1);
+--insert into employees_roles (id,id_role,id_employee) values (default, 2, 2);
+--insert into employees_roles (id,id_role,id_employee) values (default, 3, 3);
+--insert into employees_roles (id,id_role,id_employee) values (default, 4, 4);
+--insert into employees_roles (id,id_role,id_employee) values (default, 5, 5);
+--insert into employees_roles (id,id_role,id_employee) values (default, 6, 6);
+--insert into employees_roles (id,id_role,id_employee) values (default, 7, 7);
+--insert into employees_roles (id,id_role,id_employee) values (default, 8, 8);
+--insert into employees_roles (id,id_role,id_employee) values (default, 9, 9);
+--insert into employees_roles (id,id_role,id_employee) values (default, 10, 10);
+
+--заполнение service
+--insert into service (id, service_title, price) values (default, 'Car maintenance', 100);
+--insert into service (id, service_title, price) values (default, 'Tire fitting', 70);
+--insert into service (id, service_title, price) values (default, 'Delivery of broken cars', 65);
+--insert into service (id, service_title, price) values (default, 'Welding works', 90);
+--insert into service (id, service_title, price) values (default, 'Refueling the air conditioner', 50);
+--insert into service (id, service_title, price) values (default, 'Renovation work', 80);
+--insert into service (id, service_title, price) values (default, 'Computer diagnostics', 45);
+--insert into service (id, service_title, price) values (default, 'Electrical repair', 60);
+--insert into service (id, service_title, price) values (default, 'Selection of parts', 15);
+--insert into service (id, service_title, price) values (default, 'Camber-convergence', 55);
+
+--заполнение materials
+--insert into materials (id, material_title, amount, price) values (default, 'Oil', 1000, 300);
+--insert into materials (id, material_title, amount, price) values (default, 'Timing belt', 30, 100);
+--insert into materials (id, material_title, amount, price) values (default, 'Bearing', 100, 20);
+--insert into materials (id, material_title, amount, price) values (default, 'Stuffing box', 1000, 300);
+--insert into materials (id, material_title, amount, price) values (default, 'Clutch', 15, 150);
+--insert into materials (id, material_title, amount, price) values (default, 'Filter', 125, 20);
+--insert into materials (id, material_title, amount, price) values (default, 'Brake pads', 90, 75);
+--insert into materials (id, material_title, amount, price) values (default, 'Brake discs', 90, 85);
+--insert into materials (id, material_title, amount, price) values (default, 'Water pump', 50, 65);
+--insert into materials (id, material_title, amount, price) values (default, 'Relay', 250, 35);
+
+--заполнение claim
+--insert into claim (id, service_id, employee_id, material_id, claim_date, sales_manager) values (default, 1, 7, 1, CURRENT_TIMESTAMP, 5);
+--insert into claim (id, service_id, employee_id, material_id, claim_date, sales_manager) values (default, 2, 7, 2, CURRENT_TIMESTAMP, 5);
+--insert into claim (id, service_id, employee_id, material_id, claim_date, sales_manager) values (default, 3, 3, 3, CURRENT_TIMESTAMP, 5);
+--insert into claim (id, service_id, employee_id, material_id, claim_date, sales_manager) values (default, 4, 4, 4, CURRENT_TIMESTAMP, 5);
+--insert into claim (id, service_id, employee_id, material_id, claim_date, sales_manager) values (default, 5, 7, 5, CURRENT_TIMESTAMP, 5);
+--insert into claim (id, service_id, employee_id, material_id, claim_date, sales_manager) values (default, 6, 7, 6, CURRENT_TIMESTAMP, 5);
+--insert into claim (id, service_id, employee_id, material_id, claim_date, sales_manager) values (default, 7, 6, 7, CURRENT_TIMESTAMP, 5);
+--insert into claim (id, service_id, employee_id, material_id, claim_date, sales_manager) values (default, 8, 6, 8, CURRENT_TIMESTAMP, 5);
+--insert into claim (id, service_id, employee_id, material_id, claim_date, sales_manager) values (default, 9, 5, 9, CURRENT_TIMESTAMP, 5);
+--insert into claim (id, service_id, employee_id, material_id, claim_date, sales_manager) values (default, 10, 7, 10, CURRENT_TIMESTAMP, 5);
+
+--заполнение Suppliers 
+--insert into suppliers (id, name_sup) values (default, 'Armtek');
+--insert into suppliers (id, name_sup) values (default, 'Tolex');
+--insert into suppliers (id, name_sup) values (default, 'Motors');
+--insert into suppliers (id, name_sup) values (default, 'Dias');
+--insert into suppliers (id, name_sup) values (default, 'AvtoVol');
+--insert into suppliers (id, name_sup) values (default, 'Auto-truck');
+--insert into suppliers (id, name_sup) values (default, 'Exte');
+--insert into suppliers (id, name_sup) values (default, 'AV');
+--insert into suppliers (id, name_sup) values (default, 'Sviat');
+--insert into suppliers (id, name_sup) values (default, 'ML-auto');
+
+
