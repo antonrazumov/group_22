@@ -1,0 +1,20 @@
+./Desktop/1_file.txt:3:2. Вывести адрес приложения todolist в системе Android - adb shell pm list packages | grep todolist
+./Desktop/1_file.txt:5:3. Установить .apk файл приложениия todolist на телефон с компьютера через  ADB - adb install /Users/anton/Downloads/001_ToDoList-master/app/build/outputs/apk/debug/todolist.apk
+./Desktop/1_file.txt:7:4. Сделать скриншот запущенного приложения todolist и сразу скопировать на компьютер в одной команде - adb shell screencap /storage/emulated/0/DCIM/group_22.png | adb pull /storage/emulated/0/DCIM/group_22.png /Users/anton/Downloads/1/group_22.png
+./Desktop/1_file.txt:9:5. Вывести в консоль логи приложения todolist 
+./Desktop/1_file.txt:10:6. Скопировать логи приложения todolist на компьютер - adb logcat | grep -rnw "todolist" > /Users/anton/Downloads/1/todolist.log
+./Desktop/1_file.txt:12:7. Удалить приложение todolist с телефона через ADB - adb uninstall com.android.todolist
+./Library/Logs/Google/AndroidStudio2020.3/idea.log:4428:2021-11-16 14:33:27,155 [2900120]   INFO - idea.run.AndroidProcessHandler - Adding device emulator-5554 to monitor for launched app: com.android.todolist 
+./Library/Logs/Google/AndroidStudio2020.3/idea.log:4430:2021-11-16 14:33:27,429 [2900394]   INFO - ndroidLiveLiteralDeployMonitor - Creating monitor for project 001_ToDoList-master targeting app com.android.todolist 
+./Library/Logs/Google/AndroidStudio2020.3/idea.log:4431:2021-11-16 14:33:27,993 [2900958]   INFO - ools.idea.run.tasks.DeployTask - Installing application: com.android.todolist 
+./Library/Logs/Google/AndroidStudio2020.3/idea.log:4440:2021-11-16 14:33:30,791 [2903756]   INFO - a.run.tasks.AbstractDeployTask - 389715ms LOG_ERR [4592][4592] : Could not get package user id: run-as: unknown package: com.android.todolist
+./Library/Logs/Google/AndroidStudio2020.3/idea.log:4443:2021-11-16 14:33:30,791 [2903756]   INFO - a.run.tasks.AbstractDeployTask - 389883ms LOG_ERR [4592][4592] : Could not find apks for this package: com.android.todolist 
+./Library/Logs/Google/AndroidStudio2020.3/idea.log:4448:2021-11-16 14:33:31,003 [2903968]   INFO - a.run.tasks.AbstractDeployTask - 390100ms LOG_ERR [4592][4592] : Could not get package user id: run-as: unknown package: com.android.todolist
+./Library/Logs/Google/AndroidStudio2020.3/idea.log:4451:2021-11-16 14:33:31,003 [2903968]   INFO - a.run.tasks.AbstractDeployTask - 390180ms LOG_ERR [4592][4592] : Could not find apks for this package: com.android.todolist 
+./Library/Logs/Google/AndroidStudio2020.3/idea.log:5279:2021-11-23 14:53:42,539 [1782513]   INFO - idea.run.AndroidProcessHandler - Adding device Pixel_3a_API_30 [emulator-5554] to monitor for launched app: com.android.todolist 
+./Library/Logs/Google/AndroidStudio2020.3/idea.log:5280:2021-11-23 14:53:42,759 [1782733]   INFO - ndroidLiveLiteralDeployMonitor - Creating monitor for project 001_ToDoList-master targeting app com.android.todolist 
+./Library/Logs/Google/AndroidStudio2020.3/idea.log:5281:2021-11-23 14:53:43,076 [1783050]   INFO - ools.idea.run.tasks.DeployTask - Installing application: com.android.todolist 
+./Library/Logs/Google/AndroidStudio2020.3/idea.log:5286:2021-11-23 14:53:43,613 [1783587]   INFO - a.run.tasks.AbstractDeployTask - 2238918ms LOG_ERR [10707][10707] : Could not get package user id: run-as: unknown package: com.android.todolist
+./Library/Logs/Google/AndroidStudio2020.3/idea.log:5289:2021-11-23 14:53:43,613 [1783587]   INFO - a.run.tasks.AbstractDeployTask - 2238938ms LOG_ERR [10707][10707] : Could not find apks for this package: com.android.todolist 
+./Library/Logs/Google/AndroidStudio2020.3/idea.log:5294:2021-11-23 14:53:43,680 [1783654]   INFO - a.run.tasks.AbstractDeployTask - 2239031ms LOG_ERR [10707][10707] : Could not get package user id: run-as: unknown package: com.android.todolist
+./Library/Logs/Google/AndroidStudio20
